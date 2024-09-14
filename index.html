@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+<script defer src="main.js"></script></head>
+<body>
+  <h1>My Template Website</h1>
+
+  <div class="textBox">
+    <p>Some notes to help me remember what this contains:</p>
+    <ul>
+      <li>Built with npm / webpack</li>
+      <li>Includes package.json and webpack.config.js files</li>
+      <li>Source from <a href="https://www.theodinproject.com/lessons/javascript-webpack" target="_blank">Odin Project</a> -- visit that page to get the key terminal commands to run it</li>
+      <li>Includes reset.css file from Josh Comeau</li>
+      <li>Webpack uses index.js as the entry point. That index.js file imports the CSS stylesheets and any other js files</li>
+      <li>Other js files can be downloaded from npm and included in that index.js file</li>
+      <li>"npm run dev" terminal command spins up a live web server on localhost:8080</li>
+    </ul>
+  </div>
+
+  <div class="textBox">
+    <p>Today's Date:</p>
+    <p class="todayDate"></p>
+    <p class="dateNote">(date was formatted using the date-fns package, downloaded with npm)</p>
+  </div>
+
+  <h2>Grid</h2>
+  <div class="gridContainer">
+    <button class="gridItem">A</button>
+    <button class="gridItem">B</button>
+    <button class="gridItem">C</button>
+    <button class="gridItem">D</button>
+    <div class="gridItem">
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam sit illo animi, facilis consequatur suscipit similique minima. Velit, laborum aut eos dolor, cupiditate repellat doloribus dicta aliquam ab minima esse.</p>
+    </div>
+    <div class="gridItem">
+      <ul>
+        <li>Point 1</li>
+        <li>Point 2</li>
+        <li>Point 3</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2>Flex-Box</h2>
+  <div class="columnFlexContainer">
+    
+    <div class="rowFlexContainer">
+      <button class="flexItem">A</button>
+      <button class="flexItem">B</button>
+    </div>
+
+    <div class="rowFlexContainer">
+      <button class="flexItem">C</button>
+      <button class="flexItem">D</button>
+    </div>
+
+    <div class="rowFlexContainer">
+
+      <div class="flexItem">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam sit illo animi, facilis consequatur suscipit similique minima. Velit, laborum aut eos dolor, cupiditate repellat doloribus dicta aliquam ab minima esse.</p>
+      </div>
+
+      <div class="flexItem">
+        <ul>
+          <li>Point 1</li>
+          <li>Point 2</li>
+          <li>Point 3</li>
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+
+
+</body>
+</html>
