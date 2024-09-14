@@ -1,0 +1,102 @@
+/* styles.css */
+body, html {
+  background-color: rgb(60, 9, 42);
+  color: white;
+  font-family: helvetica, arial, 'Times New Roman', Times, serif;
+  font-size: 16px;
+
+}
+
+.hidden {
+  display: none;
+}
+
+button {
+  background-color: #1b5079;
+  text-align: center;
+  color: #ffffff;
+  font-family: sans-serif;
+  padding: 12px;
+  height: min(50px, 10vh);
+  border: 3px solid rgb(255, 236, 253);
+  border-radius: 10px;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 2%;
+  text-align: center;
+}
+
+button:hover {
+  background-color: #1965a0 !important;
+}
+
+.columnFlexContainer {
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
+  text-align: center;
+  background-color: rgb(13, 4, 32);
+  color: white;
+  margin: 0 auto;
+}
+
+.rowFlexContainer {
+  display: flex;
+  width: 100vw;
+  flex-direction: row;
+  text-align: center;
+  background-color: rgb(13, 4, 32);
+  color: white;
+  margin: 0 auto;
+}
+
+.flexItem {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  /* justify-content:space-around; */
+  justify-content: center;
+  margin: 5px;
+}
+
+.gridContainer {
+  overflow: auto;
+  display: grid;
+  gap: 30px;
+  padding: 5px;
+  background-color: rgb(13, 4, 32);
+  grid-template-rows: repeat(1, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  width: 100vw;
+  margin-bottom: 2vh;
+}
+
+.gridItem {
+  background-color: #8e0e3f;
+  text-align: left;
+  color: #ffffff;
+  padding: 12px;
+  border: 3px solid rgb(178, 142, 212);
+  border-radius: 12px;
+  font-size: 1em;
+  font-weight: bold;
+  margin: 0;
+
+  -webkit-box-shadow: 8px 8px 6px 0px rgba(255, 255, 255, 0.25); 
+  box-shadow: 8px 8px 6px 0px rgba(255, 255, 255, 0.25);
+}
+
+.gridContainer > button, .flexContainer > button {
+  text-align: center;
+  background-color: rgb(65, 22, 106)
+}
+
+.textBox {
+  width: 80vw;
+  margin: 0 auto;
+  padding: 5px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  border: 2px solid rgb(156, 156, 156);
+}
